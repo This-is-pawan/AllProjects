@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #222;
+}
+
+.logo {
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+/* Sections */
+.section {
+  display: none;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Hero Section */
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 25px;
+  font-size: 16px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background: darkorange;
+}
+
+#msg {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+/* About Section */
+.about h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 18px;
+}
+
+/* Contact Section */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px;
+  background: orange;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact button:hover {
+  background: darkorange;
+}
+
+#contactMsg {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
