@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2 class="logo">MyApp</h2>
+    <button id="logoutBtn">Logout</button>
+  </nav>
+
+  <!-- Main -->
+  <main class="container">
+   <div class="welcome">
+    <h1>Welcome 🎉</h1>
+    <p id="userEmail"></p>
+   </div>
+
+    <!-- Dashboard -->
+    <section class="card">
+      <header class="card-header">
+        <h2>Dashboard</h2>
+        <p class="subtitle">Your account overview</p>
+      </header>
+
+      <div class="info">
+        <div class="box">
+          <h4>Username</h4>
+          <p id="username">user</p>
+        </div>
+
+        <div class="box">
+          <h4>Email</h4>
+          <p id="email">user@email.com</p>
+        </div>
+
+        <div class="box">
+          <h4>Account Status</h4>
+          <p class="success">Active</p>
+        </div>
+
+        <div class="box">
+          <h4>Role</h4>
+          <p>User</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="action-btn">View Profile</button>
+        <button class="action-btn outline">Settings</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (!user) {
+      window.location.href = "index.html";
+    } else {
+      document.getElementById("userEmail").innerText =
+        `Logged in as: ${user.email}`;
+      document.getElementById("username").innerText = user.name;
+      document.getElementById("email").innerText = user.email;
+    }
+
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      localStorage.removeItem("user");
+      window.location.href = "index.html";
+    });
+  </script>
+
+</body>
+</html>

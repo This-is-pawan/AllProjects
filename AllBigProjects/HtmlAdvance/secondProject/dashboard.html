@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - GreenApp</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">🌱 GreenApp</div>
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+  </nav>
+
+  <!-- HERO / GREETING -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome, <span id="userName"></span> 👋</h2>
+      <p>Explore your environment dashboard and take steps to make our planet greener. Track your eco activities, learn tips, and see your progress.</p>
+    </div>
+  </section>
+
+  <!-- DASHBOARD CARDS -->
+  <section class="dashboard-cards">
+    <div class="card">
+      <h3>Total Trees Planted</h3>
+      <p>24</p>
+    </div>
+    <div class="card">
+      <h3>Completed Tasks</h3>
+      <p>15</p>
+    </div>
+    <div class="card">
+      <h3>Pending Tasks</h3>
+      <p>5</p>
+    </div>
+    <div class="card">
+      <h3>Eco Points</h3>
+      <p>450</p>
+    </div>
+  </section>
+
+  <!-- ENVIRONMENTAL TIPS -->
+  <section class="eco-tips">
+    <h2>🌿 Environmental Tips</h2>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <h3>Plant Trees</h3>
+        <p>Plant more trees in your area to improve air quality and biodiversity.</p>
+      </div>
+      <div class="tip-card">
+        <h3>Recycle Waste</h3>
+        <p>Separate your waste and recycle plastics, metals, and paper responsibly.</p>
+      </div>
+      <div class="tip-card">
+        <h3>Save Water</h3>
+        <p>Use water efficiently, fix leaks, and collect rainwater for plants.</p>
+      </div>
+      <div class="tip-card">
+        <h3>Use Renewable Energy</h3>
+        <p>Switch to solar or wind energy to reduce carbon footprint.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT ACTIVITIES TABLE -->
+  <section class="activity-log">
+    <h2>Recent Eco Activities</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Activity</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-12-30</td>
+          <td>Planted 5 trees in local park</td>
+          <td>Completed</td>
+        </tr>
+        <tr>
+          <td>2025-12-29</td>
+          <td>Collected 3 kg of plastic waste</td>
+          <td>Completed</td>
+        </tr>
+        <tr>
+          <td>2025-12-28</td>
+          <td>Community garden cleaning</td>
+          <td>Pending</td>
+        </tr>
+        <tr>
+          <td>2025-12-27</td>
+          <td>Watered neighborhood plants</td>
+          <td>Completed</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ENVIRONMENT FACTS -->
+  <section class="eco-facts">
+    <h2>🌎 Fun Environmental Facts</h2>
+    <ul>
+      <li>One mature tree can absorb up to 48 pounds of CO2 per year.</li>
+      <li>Recycling one ton of paper saves 17 trees and 7,000 gallons of water.</li>
+      <li>Urban trees can reduce temperatures by up to 10°F in hot cities.</li>
+      <li>Indoor plants improve air quality and reduce stress levels.</li>
+      <li>Composting organic waste reduces methane emissions from landfills.</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 GreenApp. Let's make the planet greener together! 🌱
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

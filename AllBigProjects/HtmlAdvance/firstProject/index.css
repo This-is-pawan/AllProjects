@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2563eb;
+  --text-white-color: white;
+  --bg-color: #5c3b3b;
+}
+
+body{
+  background: pink;
+}
+h1, h5 {
+  color: black;
+  text-align: center;
+}
+
+span {
+  color: blueviolet;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.register_form,
+.Login_form {
+  width: 90%;
+  max-width: 500px;
+  margin: 5rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 1rem;
+  display: none;
+}
+
+.register_form.active,
+.Login_form.active {
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 1em 0;
+  border-radius: 5px;
+  border: none;
+  background: rgb(249, 244, 245);
+}
+
+.lock {
+  position: relative;
+}
+
+.fa-lock {
+  position: absolute;
+  right: 1rem;
+  top: 1.6rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+button {
+  width: 100%;
+  background: var(--primary-color);
+  color: var(--text-white-color);
+  border: none;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin: 1rem auto;
+}
+.registerPopup{
+text-align: center;
+padding: 1px;
+}
+.loginPopup{
+text-align: center;
+padding: 1px;
+}
+/* home css */
+.navbar{
+display: flex;
+justify-content:space-around;
+align-items: center;
+background: blueviolet;
+padding: 1rem;
+}
+.welcome{
+  display: flex;
+  justify-content:space-around;
+align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.box {
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.box h4 {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.box p {
+  margin-top: 0.3rem;
+  font-weight: 600;
+}
+
+.success {
+  color: green;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.action-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.container{
+  width: 100%;
+  margin: 1rem auto;
+}
+.action-btn.outline {
+  background: transparent;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+#logoutBtn{
+width: 100px;
+background: white;
+color: black;
+}
+@media screen and (max-width:500px) {
+  .welcome{
+    font-size: 13px;
+     display: flex;
+     flex-direction: column;
+    padding: 1rem;
+  justify-content:space-around;
+align-items: center;
+  }
+  .container{
+    width: 100%;
+    max-width: 300px;
+    
+  }
+}
+@media screen and (min-width:500px) {
+.container{
+    width: 100%;
+    max-width: 700px;
+  }
+}

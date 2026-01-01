@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BusinessName | Services</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img src="../Crosspath Consulting logo design.png" alt="Logo" height="40"> </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="cta-btn" id="contactBtn">Contact Us</button>
+    </nav>
+  </header>
+
+  <section class="services">
+    <h1>Our Services</h1>
+    <p class="explore_card">Click on the cards to explore more about our services.</p>
+
+    <div class="service-cards">
+      <div class="card" data-page="consulting.html">
+        <h3>Consulting</h3>
+        <p>Professional advice for business strategies and growth.</p>
+      </div>
+      <div class="card" data-page="marketing.html">
+        <h3>Marketing</h3>
+        <p>Creative marketing solutions to boost brand visibility.</p>
+      </div>
+      <div class="card" data-page="support.html">
+        <h3>Support</h3>
+        <p>24/7 support to maintain smooth operations.</p>
+      </div>
+      <div class="card" data-page="development.html">
+        <h3>Development</h3>
+        <p>Web and software development to modernize your business.</p>
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+  <h1>What Our Clients Say</h1>
+
+  <div class="review-cards" id="reviewList">
+    <div class="review-card">
+      <p>"Excellent consulting services. Helped our business grow fast!"</p>
+      <h4>— Rahul Sharma</h4>
+    </div>
+
+    <div class="review-card">
+      <p>"Professional team and great support. Highly recommended."</p>
+      <h4>— Anjali Verma</h4>
+    </div>
+  </div>
+
+  <!-- ADD REVIEW FORM -->
+  <div class="review-form">
+    <h3>Add Your Review</h3>
+    <input type="text" id="reviewName" placeholder="Your Name">
+    <textarea id="reviewText" placeholder="Your Review"></textarea>
+    <button onclick="addReview()">Submit Review</button>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2025 BusinessName. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Facebook</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

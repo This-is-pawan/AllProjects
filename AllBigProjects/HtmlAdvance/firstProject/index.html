@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Login</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- Register -->
+<div class="register_form active">
+  <h1>Register</h1>
+  <form>
+    <input type="text" class="name" placeholder="user name" required />
+    <input type="email" class="register-email" placeholder="user email" required />
+
+    <article class="lock">
+      <input type="password" class="register-password" placeholder="user password" required />
+      <i class="fa-solid fa-lock"></i>
+    </article>
+
+    <button class="register_btn" type="submit">Register</button>
+    <h5>Already have an account? <span class="show-login">Login</span></h5>
+    <p class="registerPopup"></p>
+  </form>
+</div>
+
+<!-- Login -->
+<div class="Login_form">
+  <h1>Login</h1>
+  <form>
+    <input type="email" class="login-email" placeholder="user email" required />
+
+    <article class="lock">
+      <input type="password" class="login-password" placeholder="user password" required />
+      <i class="fa-solid fa-lock"></i>
+    </article>
+
+    <button type="submit" class="Login_btn">Login</button>
+    <h5>Create new account <span class="show-register">Register</span></h5>
+    <p class="loginPopup"></p>
+  </form>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
